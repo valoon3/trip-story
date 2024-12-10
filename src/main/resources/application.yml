@@ -3,3 +3,6 @@ spring:
     name: trip-story
   profiles:
     active: local # ????? local ????? ???
+  devtools:
+    restart:
+      enabled: false
