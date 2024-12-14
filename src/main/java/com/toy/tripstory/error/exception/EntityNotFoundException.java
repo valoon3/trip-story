@@ -1,6 +1,7 @@
 package com.toy.tripstory.error.exception;
 
-import com.project.springboard.error.ErrorType;
+
+import com.toy.tripstory.error.ErrorType;
 
 /**
  * 엔터티(데이터베이스 객체 등)를 찾을 수 없는 경우 발생하는 예외 클래스입니다.

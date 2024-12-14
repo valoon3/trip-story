@@ -1,6 +1,6 @@
 package com.toy.tripstory.error.exception;
 
-import com.project.springboard.error.ErrorType;
+import com.toy.tripstory.error.ErrorType;
 import lombok.Getter;
 
 /**
