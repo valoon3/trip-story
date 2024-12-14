@@ -1,4 +1,4 @@
-package com.toy.tripstory.util;
+package com.toy.tripstory.envConfig;
 
 import jakarta.annotation.PostConstruct;
 import lombok.NoArgsConstructor;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @NoArgsConstructor
-public class TestConfig {
+public class DbConfig {
     @Value("${spring.datasource.url}")
     private String dbUrl;
 
