@@ -20,8 +20,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final TokenManager tokenManager;
 
     private List<String> notAuthorizationUri = List.of(
-            "/api/member/signup",
-            "/api/member/login"
+            "/api/v1/member/signup",
+            "/api/v1/member/login"
     );
 
     @Override

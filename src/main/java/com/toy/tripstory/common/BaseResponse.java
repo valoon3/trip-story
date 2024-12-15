@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 public class BaseResponse<T> extends ResponseEntity<ResponseBodyDto<T>> {
+
     public BaseResponse(T data, HttpStatus status) {
         super(new ResponseBodyDto<>(data), status);
     }

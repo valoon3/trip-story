@@ -22,10 +22,11 @@ public class ResponseBodyDto<T> {
 
     public ResponseBodyDto(T data, String message) {
         this(data);
+        this.success = false;
         this.message = message;
     }
 
-    public ResponseBodyDto(T data, String logMessage, String message) {
+    public ResponseBodyDto(T data, String message, String logMessage) {
         this(data, message);
         this.logMessage = logMessage;
     }
