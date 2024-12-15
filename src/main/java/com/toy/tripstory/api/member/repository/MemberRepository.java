@@ -1,11 +1,12 @@
 package com.toy.tripstory.api.member.repository;
 
 import com.toy.tripstory.api.member.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MemberRepository {
+import java.util.Optional;
 
-    void save(Member member);
+public interface MemberRepository extends JpaRepository<Member, Long> {
 
-    Member findById(Long memberId);
+    Optional<Member> findByEmail(String email);
 
 }

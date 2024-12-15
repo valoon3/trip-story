@@ -1,5 +1,6 @@
-package com.toy.tripstory.auth;
+package com.toy.tripstory.auth.filter;
 
+import com.toy.tripstory.auth.TokenManager;
 import com.toy.tripstory.auth.util.AuthorizationHeaderUtils;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

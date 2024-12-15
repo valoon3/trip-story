@@ -1,4 +1,4 @@
-package com.toy.tripstory.auth;
+package com.toy.tripstory.auth.util;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.toy.tripstory.auth;
+package com.toy.tripstory.auth.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.toy.tripstory.common.BaseResponse;

@@ -2,6 +2,7 @@ package com.toy.tripstory.auth;
 
 import com.toy.tripstory.auth.constance.GrantType;
 import com.toy.tripstory.auth.constance.TokenType;
+import com.toy.tripstory.auth.util.JwtToken;
 import com.toy.tripstory.error.ErrorType;
 import com.toy.tripstory.error.exception.UnauthorizedException;
 import io.jsonwebtoken.Claims;
