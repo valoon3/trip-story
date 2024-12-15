@@ -2,6 +2,7 @@ package com.toy.tripstory.api.member.service;
 
 import com.toy.tripstory.api.member.distance.RoleType;
 import com.toy.tripstory.api.member.dto.LoginRequest;
+import com.toy.tripstory.api.member.dto.MemberRegisterRequest;
 import com.toy.tripstory.api.member.entity.Member;
 import com.toy.tripstory.api.member.repository.MemberRepository;
 import com.toy.tripstory.api.member.repository.MemberRoleRepository;
@@ -48,12 +49,12 @@ public class MemberService {
     }
 
     @Transactional
-    public Long signup(String email, String password, String nickname, String username) {
+    public Long signup(MemberRegisterRequest request) {
         Member member = Member.createMember(
-                email,
-                passwordEncoder.encode(password),
-                nickname,
-                username
+                request.getEmail(),
+                passwordEncoder.encode(request.getPassword()),
+                request.getNickname(),
+                request.getUsername()
         );
 
         memberRepository.save(member);
